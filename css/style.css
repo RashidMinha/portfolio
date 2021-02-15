@@ -25,7 +25,7 @@ header .container .logo h2{
     color: #fff;
     margin: 0;
 }
-header .list nav ul{
+header .list nav ul{ 
   display: flex;
   
 }
@@ -35,7 +35,14 @@ header .list nav ul li{
 header .list nav ul li a{
 	text-decoration: none;
     color:#fff;
-	padding-left: 40px;
+    margin-left: 30px;
+    padding: 7px 10px;
+    
+}
+header .list nav ul li a:hover{
+  
+    color:rgb(187, 22, 22);
+    
 }
 
 
@@ -93,7 +100,7 @@ header .list nav ul li a{
 #about-me .container .outer-pic:before,
 #about-me .container .outer-pic:after{
     content: "";
-    background: #34495e;
+    background: #aa4161;
     opacity: 0.5;
     position: absolute;
     top: 0;
@@ -203,16 +210,17 @@ header .list nav ul li a{
 }
 #about-me .container .row .col .social-icons ul li a i{
   font-size: 20px; 
-  border: 1px solid #000;
-  padding: 5px;
-  border-radius: 20px;
+  border: 2px solid #a39d9d;
+  padding: 10px;
+  border-radius: 50%;
   color: #000;
   margin-top: 5px;
+   
   
 } 
 #about-me .container .row .col .social-icons ul li a i:hover{
-    color: red;
-    background: aqua;
+    color: #fff;
+    background: #3a2f2f ;
 } 
 #about-me .container .row .col .aboutme-content p{
     padding-top: 17px;
@@ -264,11 +272,11 @@ header .list nav ul li a{
     /* border: 1px solid red; */
     padding: 30px;
     margin: 15px;
-    
+    border:1px solid rgb(155, 152, 152);
 }
 #our-services .container .col-content .icons i{
    font-size: 50px;
-   color: red;
+   color:#ea2c2c;
 }
 #our-services .container .col-content h2{
 padding-bottom: 10px; 
@@ -282,7 +290,7 @@ padding-top:10px;
     border-style: solid;
     width: 20%;
     margin: 0 auto;
-    color: red;
+    color:#ea2c2c;
     background-color: red;
 
 }
@@ -295,10 +303,15 @@ padding-top:10px;
 }
 
 #our-services .container .footer .bottom .btn-primary{
-   background-color:red;
+   background-color:#ea2c2c;
    padding:15px 35px;
    border-radius: 7px;
-   cursor: pointer;  
+   cursor: pointer; 
+   outline: none; 
+   border: 1px solid #ea2c2c;
+}
+#our-services .container .footer .bottom .btn-primary:hover{
+background-color: #be1616;
 }
 /* our services section end here */
 
@@ -443,32 +456,110 @@ padding-top:10px;
      display: block;
      text-align: center;
    } 
-   #contact-us .container .form-content input{
-       width: 442px;
-       margin-bottom: 20px;
+   #contact-us .container footer .end{
+       width:100%; 
    }
+   #contact-us .container footer .end-one{
+    width:100%; 
+}
+ #contact-us .container one{
+     width: 100%;
+ }
+   #contact-us .container input{
+       width: 100%;
+       margin-bottom: 20px;
+       height: 25px;
+   }
+   #contact-us .container .message{
+    width: 100%;
+    margin-bottom: 20px;
+    /* height: 20px; */
+}
    #contact-us .container .end-one input{
-         width: 1015px;
+         width: 100%;
           margin-bottom: 20px;
    }
    #contact-us .container .end input{
-    width: 1015px;
+    width: 100%;
     padding-bottom: 100px;
 
 }
 #contact-us .container footer .end-button button{
-   padding: 10px 30px; 
-   color: #fff;
-   background-color:red;
-   float: right;
-   margin-right: 10px;
-   border: 1px solid red;
-   border-radius: 3px;
-   margin-top:20px;
+    background-color:#ea2c2c;
+    padding:15px 35px;
+    border-radius: 7px;
+    cursor: pointer; 
+    outline: none; 
+    border: 1px solid #ea2c2c;
+    float: right;
+}
+#contact-us .container footer .end-button button:hover{
+    background-color: #be1616;
 }
 
 
 /* contact us section end here */
+
+/* footer section start here */
+#footer{
+    background-color: #000;
+}
+#footer .container{
+    padding: 40px 0px;
+}
+ #footer .container .icons-content {
+     margin: 0 auto;
+
+ }
+ #footer .container .icons-content i{
+    color:rgb(167, 148, 148);
+   background-color: #3a2f2f;
+   margin: 10px;
+   padding: 10px;
+   font-size: 1.4rem;
+   border: 2px solid #3a2f2f;
+   border-radius: 50%;
+
+}
+#footer .container .icons-content i:hover{
+    background-color: gray;
+    color: #000;
+}
+ #footer .container .footer-content {
+    margin: 0 auto;
+}
+#footer .container .footer-content ul{
+  margin-top: 20px;
+}
+#footer .container .footer-content ul li{
+ list-style-type: none;
+}
+#footer .container .footer-content ul li a{
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #fff;
+}
+#footer .container .footer-content ul li a:hover{
+    color: red;
+}
+/* footer section end here */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -537,7 +628,7 @@ padding-top:10px;
 .box .box-content:before,
 .box .box-content:after{
     content: "";
-    background: linear-gradient(to right bottom,#38ef7d,#11998e);
+    background: linear-gradient(to right bottom,#b13e3e,#11998e);
     width: 50%;
     height: 50%;
     border-radius: 0 0 200% 0;
@@ -677,7 +768,7 @@ padding-top:10px;
     font-size: 23px;
 }
 #top-section .container .row .content-box h2{
-    /* padding-bottom: 20px; */
+    padding-bottom: 20px;
     font-size: 23px;
 }
 #about-me .container .row .col .social-icons{
@@ -692,4 +783,23 @@ padding-top:10px;
 }
 #our-work .container .work-content{
     width:100%; 
+}
+#our-work .container .list ul li a{
+    margin: 0;
+    padding: 6px;
+}
+#our-blog .container .blog-content{
+    width: 100%;
+}
+#our-blog .container .cards{
+    display: block;
+}
+#contact-us .container  .footer-content{
+    width: 100%;
+}
+#footer .container .icons-content{
+    text-align: center;
+}
+#footer .container .footer-content{
+    text-align: center;
 }
